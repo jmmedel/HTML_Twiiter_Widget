@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title></title>
+    <link href="css.css" rel="stylesheet"/>
+    
+</head>
+
+<body onload="paint()">
+    <div>
+        <p>If you are viewing this in the profile Showcase, it will not display the styles. Please view the pen itself.</p>
+
+        <p>I have "styled" the Twitter widget using vanilla JS. I did NOT try and make it look nice, merely changed some fonts
+            and colors to show you that it is possible.</p>
+        <p>Last Update: Working as of October 22, 2017. Original method did not work anymore. New method does not require extensive
+            and bloated jQuery.</p>
+    </div>
+
+    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/hikakin" data-widget-id="343053082919333888">Tweets by @mythicalpizza</a>
+    <script>
+        !function (d, s, id) {
+             var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+              if (!d.getElementById(id)) {
+                   js = d.createElement(s);
+                   js.id = id; js.src = p + "://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                 } 
+            }(document, "script", "twitter-wjs");
+    </script>
+</body>
+
+</html>
